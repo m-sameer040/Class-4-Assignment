@@ -2,26 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* styles global.css */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #363131;
+  margin: 0;
+  padding: 0;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+  color:whitesmoke;
+  font-weight: bold;
+  font-style: normal;
+} 
+
+.student-card {
+  background-color: white;
+  border: 2px solid rgb(249, 221, 152);
+  border-radius: 30px;
+  padding: 30px;
+  width: 250px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+.student-card img {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  box-shadow: #363131;
+}
+
+.student-card h2 {
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: black;
+}
+
+.student-card p {
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0;
+  color: black;
 }
